@@ -67,6 +67,7 @@ body {
   align-items: center;
 }
 
+.curio_fut
 
 html {
   scroll-behavior: smooth;
@@ -74,6 +75,41 @@ html {
 
 :target {
 scroll-margin-top: .8em;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper.mySwiper{
+  height: 60vh;
+}
+
+.swiper-slide {
+  height: 400px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .banner {
@@ -100,7 +136,7 @@ scroll-margin-top: .8em;
 }
 
 .curio_fut {
-  background-color: #e5e5e5;
+  background-color: white;
   display: flex;
 }
 
