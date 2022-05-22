@@ -20,7 +20,7 @@ body {
   position: fixed;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid lightgreen;
+  border-bottom: 3px solid #008000;
 }
 
 .header .container {
@@ -29,8 +29,17 @@ body {
 
 .header a {
   text-decoration: none;
-  color: lightblue;
+  color: #120a8f;
   padding: 1vw;
+}
+
+.nome_site{
+  color: #120a8f;
+  width: fit-content;
+  font-size: 25px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .aqui {
@@ -41,8 +50,6 @@ body {
 .aqui:hover{
   text-decoration:underline;
   transition: 1s;
-  background-color: #161618;
-  color: #fff;
 }
 
 .navbar {
@@ -58,14 +65,6 @@ body {
 }
 
 
-.nome_site{
-  color: lightblue;
-  width: fit-content;
-  font-size: 25px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
 
 html {
   scroll-behavior: smooth;
@@ -152,10 +151,10 @@ scroll-margin-top: .8em;
 .footer {
   background-color: white;
   height: 8vh;
-  color: lightblue;
+  color: #120a8f;
   display: flex;
   font-size: 18px;
-  border-top: 3px solid lightgreen;
+  border-top: 3px solid #008000;
   margin-top: 20px;
 }
 
