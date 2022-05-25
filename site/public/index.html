@@ -20,15 +20,17 @@
 <body>
     <div class="header" id="header">
         <div class="container" id="container">
-            <h1 class="nome_site">Fut Analytics</h1>
+            <h1 class="nome_site" href="#inicio">Fut Analytics</h1>
             <ul class="navbar" id="navbar">
-                <li><a class="aqui" href="">Início</a></li>
-                <li><a class="aqui" href="">Login</a></li>
+                <li><a class="aqui" href="#inicio">Início</a></li>
+                <li><a class="aqui" href="login.html">Login</a></li>
                 <li><a class="aqui" href="#fut">Curiosidades-Futebol</a></li>
                 <li><a class="aqui" href="#fifa">Curiosidades-FIFA </a></li>
             </ul>
         </div>
     </div>
+
+    <a name="inicio" class="descer_pag"></a>
 
     <div class="banner">
         <div class="container">
@@ -71,10 +73,25 @@
           <div class="swiper-slide"><img src="assets/imgs/slide4.jpg"></div>
           <div class="swiper-slide"><img src="assets/imgs/slide5.jpg"></div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <br><br>
+
+    <div style="height: 70px; border: 1px solid black; border-radius: 10px; width: 85vw;" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div style="height: 40px;" class="swiper-slide"><h3> <br> Nesse exato dia, Pelé conquistava seu tricampeonato mundial pela seleção brasileira em 1970, nessa altura da carreira de Pelé, <br> ele já era considerado o maior jogador da história do futebol, por ser o único jogador a conquistar o campeonate 3x.</h3></div>
+
+            <div style="height: 40px;" class="swiper-slide"><h3> <br> Nesse ano, o fifa veio revolucionando a jogabilidade, a parte de gráficos melhorados e um estilo de jogo totalmente diferente do ano anterior. <br> Isso é uma das coisas que mais agrada os consumidores do jogo e os estiga a comprar para sempre se manterem atualizados. </h3></div>
+
+            <div style="height: 40px;" class="swiper-slide"><h3> <br> Em 2021, o palmeiras atingiu uma marca histórica, foi campeão da libertadores em duas edições seguinda, conquistando pela terceira vez o título. <br> Muito disso se deve ao novo grande treinador do verdão, que impõe um ritmo de jogo e uma tática diferente a cada partida.</h3></div>
+
+            <div style="height: 40px;" class="swiper-slide"><h3> <br> O modo mais jogado do fifa têm muitas novidades, e uma delas é sobre um novo estilo de jogo da Weekend League, passando de 30 jogos para 20 jogos, isso foi uma mudança bem vista entre a comunidade  do jogo pelo dinamismo empregado junto com a mudança.</h3></div>
+            <div style="height: 40px;" class="swiper-slide"><h3> <br> Como um bom brasileiro, torcedor afirma que independente das insatisfações da torcida sobre o técnico Tite, ele se vê confiante com a seleção na copa do mundo e crava que o hexa está cada vez mais próximo! Acertou ou zikou? </h3></div>
+        </div>
+    </div>
 
     <div class="curio_fut">
         <div class="container">
@@ -102,7 +119,14 @@
 
     <div class="footer">
         <div class="container">
-            Teste
+           <h3> Contato: <br>
+            (11) 99976-9377 </h3><img src="assets/icon/icone_tel.png">
+
+         <h3> Email: <br>
+            andreas.bittencourt@sptech.school </h3><img src="assets/icon/icone_email.png">
+
+            <h3> LinkedIn: <img src="assets/icon/icone_linkedin.png"><br>
+            Andreas Rodrigues Guanaes Bittencourt</h3>
         </div>
     </div>
 
@@ -112,12 +136,17 @@
 
 <script>
 
-      var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
         spaceBetween: 30,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-      });
-
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
 </script>

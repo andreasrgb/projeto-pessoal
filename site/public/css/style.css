@@ -115,6 +115,7 @@ scroll-margin-top: .8em;
   color: white;
   background-image: url(".././assets/imgs/ucl.jpg");
   background-size: cover;
+
 }
 
 .banner .container {
@@ -151,17 +152,22 @@ scroll-margin-top: .8em;
 .footer {
   background-color: white;
   height: 8vh;
-  color: #120a8f;
+  color: black;
   display: flex;
-  font-size: 18px;
+  font-size: 15px;
   border-top: 3px solid #008000;
   margin-top: 20px;
 }
 
 .footer .container {
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
 }
 
+.footer img{
+  width: 32px;
+  height: 32px;
+}
 
 /* LOGIN */
 
