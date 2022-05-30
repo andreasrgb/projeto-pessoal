@@ -32,24 +32,36 @@
             <div class="card medio">
                 <div class="formulario">
 
-                    <!--
-                         Para inserir mais um campo, copie uma das inputs abaixo.
-                         Assim que inserir vá para o script abaixo.
-                     -->
+                    <form>
+                    <label class="tipo_campo">Nome:</label>
+                    <input id="nome_input" type="text" placeholder="Digite seu nome">
 
-                    <span class="tipo_campo">Nome:</span>
-                    <input id="nome_input" type="text" placeholder="Seu nome">
+                    <label class="tipo_campo">E-mail:</label>
+                    <input id="email_input" type="text" placeholder="Digite seu email">
 
-                    <span class="tipo_campo">E-mail:</span>
-                    <input id="email_input" type="text" placeholder="meuemail@provedor.com">
+                    <label class="tipo_campo">Senha:</label>
+                    <input id="senha_input" type="password" placeholder="Digite sua senha">
 
-                    <span class="tipo_campo">Senha:</span>
-                    <input id="senha_input" type="password" placeholder="******">
+                    <label class="tipo_campo">Confirmar senha:</label>
+                    <input id="confirmacao_senha_input" type="password" placeholder="Confirme sua senha">
+                    
+                    <label class="tipo_campo">Jogador preferido:</label>
+                    <select id="">
+                        <option value=""></option>
+                        <option value="">Neymar JR</option>
+                        <option value="">Kylian Mbappe</option>
+                        <option value="">Messi</option>
+                        <option value="">Cristiano Ronaldo</option>
+                        <option value="">Vini JR</option>
+                        <option value="">Karim Benzema</option>
+                        <option value="">Robert Lewandowski</option>
+                        <option value="">Mohamed Salah</option>
+                        <option value="">Sadio Mané</option>
+                        <option value=""></option>
+                    </select>
 
-                    <span class="tipo_campo">Confirmação da Senha:</span>
-                    <input id="confirmacao_senha_input" type="password" placeholder="******">
-
-                    <button class="btn" onclick="cadastrar()">Cadastrar</button>
+                    </form>
+                    <button type="button" class="btn" onclick="cadastrar()">Cadastrar</button>
 
                 </div>
                 <div id="div_aguardar" class="loading-div">
