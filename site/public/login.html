@@ -31,17 +31,29 @@
                     <input type="password" id="senha_input" placeholder="Digite sua senha"> <br>
                     <button type="button" onclick="entrar()">Entrar</button>
                     <p>Ainda não é cadastrado? <a href="cadastro.html"> clique aqui </a> </p>
+
+                    <div id="msg_erro" class="msg_erro">
+                        <div class="letras_erro" id="mensagem_erro">
+
+                        </div>
+                    </div>
+
+                    <div id="div_aguardar">
+
+                    </div>
+                
                 </form>
-    
+
+                
             </div>
-        
-        <div class="login_img">
-
+            
+            <div class="login_img">
+                
+            </div>
+            
         </div>
-
-        </div>
-</body>
-
+    </body>
+    
 </html>
 
 <script>
@@ -54,8 +66,8 @@
         var senhaVar = senha_input.value;
 
         if (emailVar == "" || senhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            msg_erro.style.display = "block"
+            mensagem_erro.innerHTML = "Preencha todos os campos";
             finalizarAguardar();
             return false;
         }
@@ -113,7 +125,7 @@
     }
 
     function sumirMensagem() {
-        cardErro.style.display = "none"
+        msg_erro.style.display = "none"
     }
 
 </script>
