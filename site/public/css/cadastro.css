@@ -1,0 +1,118 @@
+  button {
+    cursor: pointer;
+  }
+
+  .container {
+    width: 85vw;
+    margin: auto;
+    display: flex;
+  }
+  
+  .header {
+    height: 8vh;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #008000;
+  }
+  
+  .header .container {
+    justify-content: space-between;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: #120a8f;
+    padding: 1vw;
+  }
+  
+  .nome_site{
+    color: #120a8f;
+    width: fit-content;
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .aqui {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .aqui:hover{
+    text-decoration:underline;
+    transition: 1s;
+  }
+  
+  .navbar {
+    width: 100vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    position: fixed;
+    margin-left: 18vw;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :target {
+  scroll-margin-top: .8em;
+  }
+  
+  .form_login {
+    height: 30vh;
+    width: 40vw;
+    margin-left: 200px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #008000;
+    border-radius: 12px;
+  }
+
+  input {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #120a8f;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    width: 30vw;
+  }
+  
+  .btn {
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #e6005a;
+    width: 120px;
+    align-self: center;
+    margin-top: 5px;
+  }
+  
+  .loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
+  
