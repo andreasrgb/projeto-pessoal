@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AcquaTec | Login</title>
+    <title>Login</title>
 
     <script src="./js/funcoes.js"></script>
-    <link rel="icon" href="./assets/imgs/icone.jpg">
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="icon" href="./assets/imgs/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
@@ -18,42 +18,28 @@
 
 <body>
 
-    <div class="header" id="header">
-        <div class="container" id="container">
-            <h1 class="nome_site" href="#inicio">Fut Analytics</h1>
-            <ul class="navbar" id="navbar">
-                <li><a class="aqui" href="index.html">Início</a></li>
-                <li><a class="aqui" href="login.html">Login</a></li>
-                <li><a class="aqui" href="#fut">Curiosidades-Futebol</a></li>
-                <li><a class="aqui" href="#fifa">Curiosidades-FIFA </a></li>
-            </ul>
+        <div class="login">
+            <div class="container">
+                
+            </div>
+                <div class="formulario">
+    
+                    <form>
+                    <label>Email:</label>
+                    <input type="text" id="email_input" placeholder="Digite seu email"> <br>
+                    <label>Senha:</label>
+                    <input type="password" id="senha_input" placeholder="Digite sua senha"> <br>
+                    <button type="button" onclick="entrar()">Entrar</button>
+                    <p>Ainda não é cadastrado? <a href="cadastro.html"> clique aqui </a> </p>
+                </form>
+    
+            </div>
+        
+        <div class="login_img">
+
         </div>
-    </div>
 
-        <div class="container">
-                <h2>Fut Analytics</h2>
-                    <form class="form_login">
-
-                    <span class="tipo_campo">E-mail:</span>
-                    <input id="email_input" type="text" placeholder="Login">
-
-                    <span class="tipo_campo">Senha:</span>
-                    <input id="senha_input" type="password" placeholder="******">
-
-                    <button type="button" class="btn" onclick="entrar()">Entrar</button>
-
-                    </form>
-
-                </div>
-
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
-
-                <div id="div_erros_login">
-
-                </div>
-
+        </div>
 </body>
 
 </html>
